@@ -131,17 +131,9 @@
         }
       }
 
-      function fireEvent() {
-        // const event = new CustomEvent('notificationCallBack', {"kek" : 1});
-        // const event = new MessageEvent('notificationCallBack', {"kek" : 1});
-        // document.dispatchEvent(event);
-        window.postMessage({ type: 'greeting', text: 'Hello from HTML!' }, '*');
-      }
-
       window.subscribeToPushNotifications = subscribeToPushNotifications;
       window.getNotificationStatus = getNotificationStatus;
       window.unsubscribeFromPushNotifications = unsubscribeFromPushNotifications;
-      window.fireEvent = fireEvent;
     </script>
     <script src="flutter_bootstrap.js" async></script>
   </body>

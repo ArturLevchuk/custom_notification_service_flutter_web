@@ -35,7 +35,7 @@ app.post('/register', (req, res) => {
     const payload = JSON.stringify({ title: 'Welcome!', body: 'Thank you for subscribing to notifications!' });
     const options = { TTL: 60 }; 
 
-    const notificationCount = 1;
+    const notificationCount = 5;
     const notificationDelay = 10 * 1000;
 
     for (let i = 0; i < notificationCount; i++) {
